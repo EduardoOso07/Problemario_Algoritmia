@@ -1,0 +1,49 @@
+Ejercicio 1: estimate_pi
+ procesos  tiempo_s  speedup  pi_media  muestras_totales
+        1  0.367720 1.000000  3.142394           2000000
+        2  0.183906 1.999503  3.142394           2000000
+        4  0.170751 2.153540  3.142394           2000000
+        8  0.221929 1.656923  3.142394           2000000
+
+Ejercicio 2: mochila voraz
+  metodo seleccionados  peso_usado  valor_total  capacidad
+lightest          A, B           5            7          5
+   ratio             C           5           10          5
+
+Ejercicio 3: 2-opt
+                    mejoras  costo_inicial  costo_final
+inicio                                                 
+Aleatoria             14.55        623.032      316.885
+Vecino más cercano     3.55        349.311      312.460
+
+Ejercicio 4: recocido simulado
+             tiempo_s  costo_final  costo_con_2opt
+esquema                                           
+exponencial     0.011      322.469         322.197
+lento           0.011      321.499         321.499
+lineal          0.011      321.499         321.499
+
+Ejercicio 5: MST
+       razon_mst  razon_mst_2opt
+count    100.000         100.000
+mean       1.114           1.002
+std        0.088           0.007
+min        1.000           1.000
+25%        1.044           1.000
+50%        1.101           1.000
+75%        1.159           1.000
+max        1.368           1.051
+
+Archivos guardados en results/
+
+--- STDERR ---
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
